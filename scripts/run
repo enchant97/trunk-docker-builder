@@ -1,0 +1,8 @@
+#!/bin/env bash
+set -e
+
+if [[ $PNPM_PRE == "true" ]]; then
+    /scripts/pnpm_pre
+fi
+
+/scripts/build
