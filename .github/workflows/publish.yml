@@ -5,6 +5,11 @@ on:
     - cron: '0 0 * 1-12 *'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
 jobs:
   publish-ghcr:
     runs-on: ubuntu-latest
